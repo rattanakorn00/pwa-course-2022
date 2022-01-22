@@ -1,3 +1,6 @@
 function helloworld() {
-  alert("Hello World!");
+  alert("Hi Meow!");
+}
+function helloworld1() {
+  alert("Great! Meow! Bye!");
 }
