@@ -1,5 +1,5 @@
 function helloworld() {
-  alert("Hi Meow!");
+  alert("Chat");
 }
 function helloworld1() {
   alert("Great! Meow! Bye!");
