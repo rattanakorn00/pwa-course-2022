@@ -6,13 +6,22 @@
 }
 
 .userlist {
-
+ background-color: rgb(61, 48, 37);
+ width: 150%;
+ height: 5%;
+ margin: auto;
 }
 
 .chat {
-
+  background-color: #a59f9f;
+  width: 150%;
+  height: 90%;
+  margin: auto;
 }
 
 .inputbox {
-  
+  background-color: #6d6969;
+  width: 150%;
+  height: 5%;
+  margin: auto;
 }
