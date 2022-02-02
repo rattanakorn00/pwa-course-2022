@@ -3,6 +3,7 @@ import './App.css';
 function Userlist () {
   return (
     <div className="userlist">
+      <h1>Chat</h1>
     </div>
   )
 }
@@ -10,6 +11,7 @@ function Userlist () {
 function Chat () {
   return (
     <div className="chat">
+      <h2>สวัสดี</h2>
     </div>
   )
 }
@@ -17,6 +19,7 @@ function Chat () {
 function Inputbox () {
   return (
     <div className="inputbox">
+      <h2>สวัสดีจ้า</h2>
     </div>
   )
 }
