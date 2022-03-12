@@ -27,6 +27,7 @@ function Chat() {
       position: msg.user === authState.user.uid ? "right" : "left"
     };
     
+    window.scrollTo(0,0);
     setChatData(oldChat => [mappedValue, ...oldChat]);
   }
 
