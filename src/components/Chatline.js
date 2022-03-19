@@ -26,9 +26,26 @@ function Chatline (props) {
         .then(data => setElement(data.gender));
     } 
     else if (text.startsWith("/randomfact")) {
+      const [, language] = text.split(" ");
+      fetch("https://uselessfacts.jsph.pl/random.json?language=en")
+       .then(res => res.json())
+       .then(data => setElement(data.text));
+      //  งานในคลาส
       // ex10-01 here: Implement randomfact using fetch & promise
       // https://uselessfacts.jsph.pl/random.json?language=en
       
+    }
+    else if (text.startsWith("/nationalize")) {
+      const [, name] = text.split(" ");
+      fetch("https://api.nationalize.io/?name="+name)
+       .then(res => res.json())
+       .then(data => setElement(data.name + " => " + data.country[0].country_id));
+    }
+    else if (text.startsWith("/Bored")) {
+      fetch("https://www.boredapi.com/api/activity")
+       .then(res => res.json())
+       .then(data => setElement(data.activity + data.type + data.participants + data.price + data.link + data.key + data.accessibility));
+      //  งานโบนัส
     }
   };
 
